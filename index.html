@@ -1,38 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNCERTIFY.AI - Coming Soon</title>
+  <meta name="description" content="Revolutionizing AI certification and trust verification. Coming Soon.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .logo {
-            margin-top: 60px;
-        }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: radial-gradient(circle at center, hsl(220, 13%, 12%) 0%, hsl(220, 13%, 8%) 100%);
+      color: hsl(210, 40%, 98%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-        .logo img {
-            width: 150px; /* Adjust size as needed */
-            height: auto;
-        }
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 64rem;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
 
-        h1 {
-            font-size: 3rem;
-            margin-top: 30px;
-        }
-    </style>
+    .logo-container {
+      margin-bottom: 3rem;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .logo {
+      height: 5rem;
+      width: auto;
+      margin: 0 auto;
+      filter: brightness(1.1) contrast(1.25) saturate(1.2);
+      mix-blend-mode: screen;
+      transition: all 0.7s ease;
+    }
+
+    .logo:hover {
+      mix-blend-mode: normal;
+    }
+
+    .title {
+      font-size: 5rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, hsl(210, 40%, 98%), hsl(198, 93%, 60%), hsl(210, 40%, 98%));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 0.8s ease-out 0.3s both;
+    }
+
+    .divider {
+      width: 6rem;
+      height: 2px;
+      background: linear-gradient(to right, transparent, hsl(198, 93%, 60%), transparent);
+      margin: 0 auto 2rem;
+      animation: fadeIn 0.8s ease-out 0.5s both;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .logo {
+        height: 4rem;
+      }
+      .title {
+        font-size: 3rem;
+      }
+      .container {
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        height: 3rem;
+      }
+      .title {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .logo {
+        height: 8rem;
+      }
+      .title {
+        font-size: 8rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="logo.jpg" alt="Website Logo">
+  <div class="container">
+    <div class="logo-container">
+      <img
+        src="logo.png"
+        alt="UNCERTIFY.AI Logo"
+        class="logo"
+      />
     </div>
-    <h1>Coming Soon</h1>
-    <p>We’re working hard to launch our new site.</p>
+    <h1 class="title">Coming Soon</h1>
+    <div class="divider"></div>
+  </div>
 </body>
 </html>
